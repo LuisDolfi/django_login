@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Entrar{% endblock %}
+{% block content %}
+<h2>Iniciar sesión</h2>
+<form method="post" novalidate>
+  {% csrf_token %}
+  {{ form.non_field_errors }}
+  <label>Usuario {{ form.username }}</label>
+  <label>Contraseña {{ form.password }}</label>
+  <label><input type="checkbox" name="remember_me"> Recordarme</label>
+  <button type="submit">Entrar</button>
+</form>
+<p>
+  ¿Olvidaste tu contraseña? <a href="{% url 'password_reset' %}">Recuperarla</a><br>
+  ¿No tenés cuenta? <a href="{% url 'signup' %}">Crear una</a>
+</p>
+{% endblock %}
