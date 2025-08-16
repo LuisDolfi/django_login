@@ -17,7 +17,7 @@ Este proyecto es una aplicación web desarrollada con **Django** que implementa 
 ## Instalación
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/TU_USUARIO/django_login.git
+   git clone https://github.com/LuisDolfi/django_login.git
    cd django_login
 
 2. Crear y activar un entorno virtual:
